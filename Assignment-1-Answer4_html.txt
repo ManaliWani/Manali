@@ -1,0 +1,14 @@
+<!-- html file of app component --> 
+
+<html>
+  <body>
+    <div style="text-align: center">
+      <h1>
+          Marvellous Infosystems
+      </h1>
+      <h2>
+          Educating for better tommorrow
+        </h2>
+    </div>
+  </body>
+</html>
