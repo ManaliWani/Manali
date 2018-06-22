@@ -1,0 +1,9 @@
+<!-- HTML file of Sub Component : MarvellousComp" -->
+
+<html>
+  <body>
+    <h2>
+        Inside SubComponent
+    </h2>
+  </body>
+</html>
