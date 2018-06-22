@@ -1,0 +1,22 @@
+/* .ts file of the Component where function for handling the event is defined */
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'component1',
+  templateUrl: './marvellous-comp.component.html',
+  styleUrls: ['./marvellous-comp.component.css']
+})
+export class MarvellousCompComponent implements OnInit {
+
+   str="Marvellous Infosystems";
+  constructor() { }
+  
+  ngOnInit() {
+  }
+  public buttonClicked()
+  {
+     this.str= "Button Clicked";
+  }
+  
+}
