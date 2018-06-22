@@ -1,0 +1,7 @@
+<!-- .html file of the Component -->
+
+<html>
+   <body>
+       Function call : {{ fun() }}
+  </body>
+</html>
