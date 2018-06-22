@@ -1,0 +1,13 @@
+
+/* .css file of First Component */
+body
+{
+    color: red
+}
+
+
+/* .css file of second Component */
+body
+{
+  color: blue
+}
