@@ -1,0 +1,16 @@
+/* .css file of root component */
+
+/* For giving colour to the text : "Text Field"   :
+
+label
+{
+    color:blue
+}
+*/
+
+/* Giving colour to the text field */
+input
+{
+    color: blue
+}
+    
