@@ -1,0 +1,31 @@
+<!--  First Component : component1 , Second Component : component2 -->
+
+<html>
+        <body> 
+                <h1>
+                         Inside Root Component
+                     <component1></component1>
+                  <component2></component2>
+               </h1>
+    </body>
+</html>
+
+
+
+<!-- html of First Component -->
+
+<html>
+        <body>
+                    Inside First Component
+    </body>
+</html>
+
+
+
+<!-- html of First Component -->
+
+<html>
+        <body>
+                    Inside Second Component
+    </body>
+</html>
