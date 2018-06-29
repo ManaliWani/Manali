@@ -1,9 +1,0 @@
-<!-- html file for calling of event on clicking button -->
-<!-- str is the String containing Marvellous Infosystems -->
-
-<html>
-  <body>
-       <button (click)="buttonClicked()">Button</button>
-       {{ str }}
-  </body>
-</html>
