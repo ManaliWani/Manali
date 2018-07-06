@@ -1,0 +1,9 @@
+
+<html>
+  <body>
+    <button (click) = "fetchData()"> Students Details </button>
+    <ul *ngFor = "let arr of students">
+      {{ arr.Name }} {{arr.Surname}} , Marks : {{arr.Marks}}
+    </ul>
+  </body>
+</html>
