@@ -1,0 +1,13 @@
+<!-- We can add validatons in form using templates-->
+<form>
+  <div class="form-group">
+  <label for="UserName">User Name</label>
+  <input required ngModel name="UserName" #name="ngModel" id="UserName" (change)="LogChange(name)" type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="!name.valid">Name is Compulsory.</div>
+</div>
+
+<div class="form-group">
+    <label>Password</label>
+    <input type="text">
+</div>
+</form>
