@@ -1,0 +1,48 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align: center">
+
+<div class="example-container">
+  <br>
+  <h2> Car Details</h2>
+<br>
+        <mat-form-field >
+            <mat-label> Car Name </mat-label>
+            <input matInput #CarName>
+          </mat-form-field>
+<br>
+<mat-form-field >
+    <mat-label> Car Type </mat-label>
+    <input matInput #CarType>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field>
+      <mat-label> Car Colour </mat-label>
+      <input matInput #CarColour>
+    </mat-form-field>
+
+    <br>
+    <mat-form-field >
+        <mat-label> Car Number </mat-label>
+        <input matInput required #CarNo>
+        <mat-hint>This field is compulsary</mat-hint>
+      </mat-form-field>
+
+      <br><br>
+      <mat-form-field appearance="legacy">
+          <mat-label> Number of seats in a car </mat-label>
+          <input matInput type="number" #Seats>
+        </mat-form-field>
+<br>
+<button mat-raised-button (click)="details(CarName.value,CarColour.value,CarType.value,CarNo.value,Seats.value)" color="primary" >Submit</button>
+<br><br><br>
+<b>{{ heading }}</b><br><br>
+  {{ carname }}<br>
+  {{ cartype }}<br>
+  {{ carcolor }}<br>
+  {{ carno }}<br>
+  {{ seats }}
+    
+</div>
+  </div>
+<router-outlet></router-outlet>

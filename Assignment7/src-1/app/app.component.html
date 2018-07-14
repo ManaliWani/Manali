@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align: center">
+
+<div class="example-container">
+  <br><br><br><br>
+  <h2> Login Page </h2>
+    <mat-form-field>
+      <input matInput placeholder="UserName" #UserName type="text">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field>
+        <input matInput placeholder="Password" #Password type="password">
+      </mat-form-field>
+
+    <br>
+    <button mat-raised-button  (click)="fun(UserName.value,Password.value)" color="primary">Submit</button>
+    <br><br>{{ str}} <b>{{ uname }}</b><br>
+    {{ pass }} <b>{{ password }}</b>
+
+</div>
+  </div>
+<router-outlet></router-outlet>

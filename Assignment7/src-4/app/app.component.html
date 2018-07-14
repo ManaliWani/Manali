@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align: center">
+  <h2><b>Table</b></h2> <br>
+
+<div class="example-container">
+
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!-- AuthorName Column -->
+        <ng-container matColumnDef="Authorname">
+          <mat-header-cell *matHeaderCellDef> Author </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Authorname}} </mat-cell>
+        </ng-container>
+      
+        <!-- Number of Pages Column -->
+        <ng-container matColumnDef="NumberOfPages">
+          <mat-header-cell *matHeaderCellDef> Number of Pages </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.NumberOfPages}} </mat-cell>
+        </ng-container>
+      
+        <!-- Price Column -->
+        <ng-container matColumnDef="Price">
+          <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.Price}} </mat-cell>
+        </ng-container>
+      
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+    
+</div>
+  </div>
+<router-outlet></router-outlet>

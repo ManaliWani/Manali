@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align: center">
+
+<div class="example-container">
+  <br><br><br><br>
+  <h2> Travelling Portal</h2>
+
+    <mat-form-field>
+        <mat-select placeholder="Select City">
+          <mat-option *ngFor="let city of cities" value="city">
+            {{ city }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+<br>
+        <mat-form-field appearance="legacy">
+            <mat-label> DD/MM/YYYY </mat-label>
+            <input matInput placeholder="Start Date">
+            <mat-hint>Enter the start date of vacation</mat-hint>
+          </mat-form-field>
+<br>
+
+<mat-form-field appearance="legacy">
+    <mat-label> DD/MM/YYYY </mat-label>
+    <input matInput placeholder="End Date">
+    <mat-hint>Enter the end date of vacation</mat-hint>
+  </mat-form-field>
+
+
+    
+</div>
+  </div>
+<router-outlet></router-outlet>
